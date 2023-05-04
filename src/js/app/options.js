@@ -12,6 +12,7 @@ export const extendDefaultOptions = additionalOptions =>
 
 export const getOptions = () => ({ ...defaultOptions });
 
+// 设置选择的方法(无法修改)
 export const setOptions = opts => {
     forin(opts, (key, value) => {
         // key does not exist, so this option cannot be set

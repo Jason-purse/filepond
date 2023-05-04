@@ -50,6 +50,7 @@ export const supported = (() => {
  */
 const state = {
     // active app instances, used to redraw the apps and to find the later
+    // 这就是为什么全局的Filepond 能够影响所有的app filepond(会重新渲染它们,并在后面发现.)
     apps: []
 };
 
